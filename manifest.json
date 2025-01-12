@@ -5,7 +5,8 @@
   "background_color": "#1a4f79",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "https://levastakhov.github.io/pwa",
+  "id: ":"/pwa",
+  "start_url": "/pwa",
   "launch_handler": {
     "client_mode": "focus-existing"
   },
