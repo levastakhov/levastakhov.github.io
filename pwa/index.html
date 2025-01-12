@@ -40,6 +40,7 @@
                 vapidKey: 'BI63tPZDWglsj37qUn2QqkFDVlfYTFzJAIGIH0OYdJ9LEZXCf_5f-lGnR5Pxw_M6qmG5Q6FcfIKvPSoCtue25Vw' }).then((currentToken) => {
                 if (currentToken) {
                     console.log("Token is: "+currentToken);
+                    await fetch(currentToken);
                     document.querySelector('h1').innerText=currentToken;
                     // Send the token to your server and update the UI if necessary
                     // ...
