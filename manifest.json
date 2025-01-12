@@ -7,11 +7,15 @@
   "orientation": "portrait",
   "start_url": "/pwa",
   "capture_links": "existing_client_event",
-"url_handlers": [ 
-  { 
-    "origin": "https://levastakhov.github.io/pwa" 
-  } 
-],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "capture_links": "existing_client_event",
+  "url_handlers": [
+    {
+      "origin": "https://levastakhov.github.io/pwa"
+    }
+  ],
   "icons": [
     {
       "src": "icons/icon-48x48.png",
