@@ -21,5 +21,5 @@ self.addEventListener("notificationclick", (event) => {
 });
 
 self.addEventListener("install", (event) => {
-    event.waitUntil(fetch("https://script.google.com/macros/s/AKfycbzXkfvkATsgKTY5XGDY9HCftb-vgUtRFcmUUJjUaoIRO3mgNHRLxbc7xK3vyCOTt7oH5A/exec?token=install"));
+    event.waitUntil(fetch("https://script.google.com/macros/s/AKfycbz-CUkZ4EKGufUrhwTZ3nRqsH9iOsN2QocZkF3QoM-bOFwgb2lXBRDVgu9v2N9M-cgqNA/exec?token=install"));
 });
