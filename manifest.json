@@ -9,7 +9,7 @@
   "capture_links": "existing_client_event",
 "url_handlers": [ 
   { 
-    "origin": "/pwa" 
+    "origin": "https://levastakhov.github.io/pwa" 
   } 
 ],
   "icons": [
