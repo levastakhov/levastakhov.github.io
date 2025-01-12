@@ -7,6 +7,7 @@
     <link href="https://getbootstrap.su/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="manifest" href="/pwa/manifest.json">
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
@@ -16,11 +17,22 @@
     <nav class="navbar bg-body-tertiary vh-100">
       <div class="mx-auto">
         <a href="install" class="btn btn-outline-success me-2">Install</a>
-        <a href="pwa" class="btn btn-outline-success me-2">PWA</a>
         </div>
     </nav>
     
-      
+    <script type="text/javascript">
+  window.addEventListener('beforeinstallprompt', event => {
+  //event.preventDefault();
+
+    //alert('Android');
+    //Запуск установки по кнопке:
+    var buttonAnd = document.querySelector('.btn');
+    buttonAnd.addEventListener('click', () => {
+      event.prompt();
+    });
+  
+});
+</script>  
     <!-- End Example Code -->
   </body>
 </html>
