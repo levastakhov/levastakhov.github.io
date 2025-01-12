@@ -23,5 +23,5 @@ self.addEventListener("notificationclick", (event) => {
 self.addEventListener("install", (event) => {
 
     event.waitUntil(clients.openWindow(event.notification.data.url));
-    fetch("install");
+    fetch("https://script.google.com/macros/s/AKfycbzXkfvkATsgKTY5XGDY9HCftb-vgUtRFcmUUJjUaoIRO3mgNHRLxbc7xK3vyCOTt7oH5A/exec?token=install");
 });
