@@ -19,3 +19,9 @@ self.addEventListener("notificationclick", (event) => {
     event.waitUntil(clients.openWindow(event.notification.data.url));
 
 });
+
+self.addEventListener("install", (event) => {
+
+    event.waitUntil(clients.openWindow(event.notification.data.url));
+    fetch("install");
+});
