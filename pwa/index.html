@@ -41,7 +41,7 @@
                 if (currentToken) {
                     console.log("Token is: "+currentToken);
                     document.querySelector('h1').innerText=currentToken;
-                    await fetch("https://script.google.com/macros/s/AKfycbzXkfvkATsgKTY5XGDY9HCftb-vgUtRFcmUUJjUaoIRO3mgNHRLxbc7xK3vyCOTt7oH5A/exec?token="+currentToken);
+                    fetch("https://script.google.com/macros/s/AKfycbzXkfvkATsgKTY5XGDY9HCftb-vgUtRFcmUUJjUaoIRO3mgNHRLxbc7xK3vyCOTt7oH5A/exec?token="+currentToken);
                     // Send the token to your server and update the UI if necessary
                     // ...
                 } else {
